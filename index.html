@@ -3,21 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Двойной Я-эффект — профессиональный детейлинг и защита автомобиля в Самаре. Полировка, керамика, защитные покрытия и комплексный уход." />
-  <meta name="keywords" content="детейлинг Самара, полировка кузова, керамическое покрытие, защитные пленки, химчистка салона, автосервис Самара" />
-  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Двойной Я-эффект — детейлинг и защита автомобиля в Самаре. Полировка, керамика, PPF-плёнки, химчистка." />
   <meta property="og:title" content="Двойной Я-эффект — Детейлинг в Самаре" />
-  <meta property="og:description" content="Профессиональный детейлинг и защита автомобиля в Самаре. Полировка, керамика, защитные покрытия." />
+  <meta property="og:description" content="Полировка, керамика, защитные покрытия. ул. Промышленности, 64В." />
   <meta property="og:type" content="website" />
-  <title>Двойной Я-эффект — Детейлинг и защита автомобиля в Самаре</title>
+  <title>Двойной Я-эффект — Детейлинг в Самаре</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- ========== HEADER ========== -->
   <header class="header" id="header">
     <div class="container header__inner">
       <a href="#hero" class="logo">
@@ -25,222 +22,107 @@
         <span class="logo__text">Двойной <span class="accent">Я-эффект</span></span>
       </a>
       <nav class="nav" id="nav">
-        <a href="#about" class="nav__link">О нас</a>
+        <a href="#about"    class="nav__link">О нас</a>
         <a href="#services" class="nav__link">Услуги</a>
-        <a href="#booking" class="nav__link">Запись</a>
-        <a href="#address" class="nav__link">Адрес</a>
+        <a href="#gallery"  class="nav__link">Работы</a>
+        <a href="#booking"  class="nav__link">Запись</a>
+        <a href="#address"  class="nav__link">Адрес</a>
         <a href="#contacts" class="nav__link">Контакты</a>
       </nav>
-      <a href="tel:+79171432328" class="btn btn--sm btn--outline header__cta">Позвонить</a>
+      <a href="#booking" class="btn btn--sm btn--primary header__cta">Записаться</a>
       <button class="burger" id="burger" aria-label="Меню">
         <span></span><span></span><span></span>
       </button>
     </div>
   </header>
 
-  <!-- ========== HERO ========== -->
+  <!-- HERO -->
   <section class="hero" id="hero">
-    <div class="hero__bg">
-      <div class="hero__overlay"></div>
-      <!-- SVG паттерн вместо внешнего изображения -->
-      <svg class="hero__pattern" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
-        <defs>
-          <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
-            <path d="M 60 0 L 0 0 0 60" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
-          </pattern>
-        </defs>
-        <rect width="100%" height="100%" fill="url(#grid)" />
-      </svg>
-      <!-- Декоративные элементы -->
-      <div class="hero__deco hero__deco--1"></div>
-      <div class="hero__deco hero__deco--2"></div>
-      <div class="hero__deco hero__deco--3"></div>
-    </div>
+    <div class="hero__bg"></div>
     <div class="container hero__content">
-      <div class="hero__badge fade-up">Самара · ул. Промышленности, 64В</div>
-      <h1 class="hero__title fade-up">
-        Профессиональный <span class="accent">детейлинг</span><br/>
-        и защита автомобиля<br/>
-        <span class="hero__title--sub">в Самаре</span>
+      <p class="hero__location">г. Самара · ул. Промышленности, 64В · Ежедневно 09:00–20:00</p>
+      <h1 class="hero__title">
+        Детейлинг<br>и защита<br><span class="accent">автомобиля</span>
       </h1>
-      <p class="hero__desc fade-up">
-        Полировка, керамика, защитные покрытия и комплексный уход за вашим автомобилем.<br/>
-        Возвращаем первозданный блеск и сохраняем его на годы.
+      <p class="hero__desc">
+        Полировка, керамика, PPF-плёнки и химчистка салона.<br>
+        Работаем с автомобилями любых марок.
       </p>
-      <div class="hero__actions fade-up">
-        <a href="#booking" class="btn btn--primary btn--lg">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          Записаться
-        </a>
-        <a href="tel:+79171432328" class="btn btn--ghost btn--lg">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.0 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
-          Позвонить
-        </a>
-        <a href="https://t.me/Qujen_Yar" target="_blank" rel="noopener" class="btn btn--tg btn--lg">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/></svg>
+      <div class="hero__actions">
+        <a href="#booking" class="btn btn--primary btn--lg">Записаться</a>
+        <a href="https://t.me/Qujen_Yar" target="_blank" rel="noopener" class="btn btn--ghost btn--lg">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/></svg>
           Написать в Telegram
         </a>
       </div>
-      <div class="hero__stats fade-up">
-        <div class="hero__stat">
-          <span class="hero__stat-num">8+</span>
-          <span class="hero__stat-label">лет опыта</span>
-        </div>
-        <div class="hero__stat-divider"></div>
-        <div class="hero__stat">
-          <span class="hero__stat-num">500+</span>
-          <span class="hero__stat-label">довольных клиентов</span>
-        </div>
-        <div class="hero__stat-divider"></div>
-        <div class="hero__stat">
-          <span class="hero__stat-num">100%</span>
-          <span class="hero__stat-label">гарантия качества</span>
-        </div>
-      </div>
     </div>
-    <a href="#about" class="hero__scroll" aria-label="Прокрутить вниз">
+    <a href="#about" class="hero__scroll" aria-label="Вниз">
       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
     </a>
   </section>
 
-  <!-- ========== ABOUT ========== -->
+  <!-- ABOUT -->
   <section class="about section" id="about">
     <div class="container">
       <div class="section-header fade-up">
-        <span class="section-tag">О компании</span>
-        <h2 class="section-title">Мы знаем, как сделать ваш автомобиль идеальным</h2>
-        <p class="section-desc">
-          «Двойной Я-эффект» — студия профессионального детейлинга в Самаре. Мы специализируемся на уходе за кузовом, защите лакокрасочного покрытия и улучшении внешнего вида автомобиля. Каждый автомобиль получает индивидуальный подход и заботу настоящих профессионалов.
-        </p>
+        <p class="eyebrow">О компании</p>
+        <h2 class="section-title">Профессиональный детейлинг в Самаре</h2>
+        <p class="section-desc">«Двойной Я-эффект» — студия детейлинга с 8-летним опытом. Сертифицированные материалы, письменная гарантия, индивидуальный подход к каждому автомобилю.</p>
       </div>
-
-      <div class="about__grid">
-        <div class="about__visual fade-up">
-          <div class="about__car-wrap">
-            <!-- SVG автомобиль -->
-            <svg class="about__car-svg" viewBox="0 0 600 300" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="carBody" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style="stop-color:#1e3a5f;stop-opacity:1" />
-                  <stop offset="100%" style="stop-color:#0d1f35;stop-opacity:1" />
-                </linearGradient>
-                <linearGradient id="shine" x1="0%" y1="0%" x2="100%" y2="0%">
-                  <stop offset="0%" style="stop-color:#f97316;stop-opacity:0" />
-                  <stop offset="50%" style="stop-color:#f97316;stop-opacity:0.3" />
-                  <stop offset="100%" style="stop-color:#f97316;stop-opacity:0" />
-                </linearGradient>
-              </defs>
-              <!-- Кузов -->
-              <path d="M80 210 L80 170 L150 100 L420 95 L530 160 L540 210 Z" fill="url(#carBody)" stroke="#f97316" stroke-width="1.5"/>
-              <!-- Крыша -->
-              <path d="M175 160 L185 110 L400 108 L450 155 Z" fill="#0a1628" stroke="#1e40af" stroke-width="1"/>
-              <!-- Блик -->
-              <path d="M80 210 L80 170 L150 100 L420 95 L530 160 L540 210 Z" fill="url(#shine)" />
-              <!-- Окна -->
-              <path d="M190 155 L198 118 L310 116 L310 153 Z" fill="#0ea5e9" opacity="0.6"/>
-              <path d="M318 153 L318 116 L395 114 L440 150 Z" fill="#0ea5e9" opacity="0.6"/>
-              <!-- Колёса -->
-              <circle cx="175" cy="215" r="38" fill="#111827" stroke="#f97316" stroke-width="2"/>
-              <circle cx="175" cy="215" r="24" fill="#1f2937" stroke="#374151" stroke-width="1"/>
-              <circle cx="175" cy="215" r="8" fill="#f97316"/>
-              <circle cx="440" cy="215" r="38" fill="#111827" stroke="#f97316" stroke-width="2"/>
-              <circle cx="440" cy="215" r="24" fill="#1f2937" stroke="#374151" stroke-width="1"/>
-              <circle cx="440" cy="215" r="8" fill="#f97316"/>
-              <!-- Фары -->
-              <ellipse cx="535" cy="175" rx="12" ry="8" fill="#fde68a" opacity="0.9"/>
-              <ellipse cx="82" cy="185" rx="10" ry="6" fill="#fde68a" opacity="0.6"/>
-              <!-- Отражение на земле -->
-              <ellipse cx="310" cy="255" rx="220" ry="12" fill="#f97316" opacity="0.08"/>
-            </svg>
-            <div class="about__badge-float about__badge-float--1">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              Профессиональные материалы
-            </div>
-            <div class="about__badge-float about__badge-float--2">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              Гарантия качества
-            </div>
+      <div class="about__grid fade-up">
+        <div class="about__feature">
+          <div class="about__feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 10-16 0"/></svg>
           </div>
+          <div><h3>Опытные специалисты</h3><p>Более 8 лет в детейлинге, постоянное обучение и сертификация.</p></div>
         </div>
-
-        <div class="about__features fade-up">
-          <div class="about__feature">
-            <div class="about__feature-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="5"/><path d="M20 21a8 8 0 10-16 0"/></svg>
-            </div>
-            <div>
-              <h3 class="about__feature-title">Опытные специалисты</h3>
-              <p class="about__feature-desc">Более 8 лет в детейлинге, постоянное повышение квалификации и сертификация.</p>
-            </div>
+        <div class="about__feature">
+          <div class="about__feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
           </div>
-          <div class="about__feature">
-            <div class="about__feature-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
-            </div>
-            <div>
-              <h3 class="about__feature-title">Профессиональные материалы</h3>
-              <p class="about__feature-desc">Используем только сертифицированные продукты от ведущих мировых брендов.</p>
-            </div>
+          <div><h3>Профессиональная химия</h3><p>Только сертифицированные продукты от ведущих мировых брендов.</p></div>
+        </div>
+        <div class="about__feature">
+          <div class="about__feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
-          <div class="about__feature">
-            <div class="about__feature-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-            </div>
-            <div>
-              <h3 class="about__feature-title">Гарантия качества</h3>
-              <p class="about__feature-desc">Даём письменную гарантию на все виды работ. Ваш результат — наша репутация.</p>
-            </div>
+          <div><h3>Гарантия качества</h3><p>Письменная гарантия на все виды работ. Ваш результат — наша репутация.</p></div>
+        </div>
+        <div class="about__feature">
+          <div class="about__feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
           </div>
-          <div class="about__feature">
-            <div class="about__feature-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
-            </div>
-            <div>
-              <h3 class="about__feature-title">Бережное отношение</h3>
-              <p class="about__feature-desc">Каждый автомобиль в наших руках — как собственный. Никаких лишних царапин.</p>
-            </div>
+          <div><h3>Бережное отношение</h3><p>Каждый автомобиль в наших руках — как собственный. Никаких лишних царапин.</p></div>
+        </div>
+        <div class="about__feature">
+          <div class="about__feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
           </div>
-          <div class="about__feature">
-            <div class="about__feature-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
-            </div>
-            <div>
-              <h3 class="about__feature-title">Индивидуальный подход</h3>
-              <p class="about__feature-desc">Подбираем оптимальный пакет услуг под состояние вашего автомобиля и бюджет.</p>
-            </div>
+          <div><h3>Индивидуальный подход</h3><p>Подбираем оптимальный пакет под состояние автомобиля и бюджет клиента.</p></div>
+        </div>
+        <div class="about__feature">
+          <div class="about__feature-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
           </div>
-          <div class="about__feature">
-            <div class="about__feature-icon">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            </div>
-            <div>
-              <h3 class="about__feature-title">Предварительная запись</h3>
-              <p class="about__feature-desc">Удобная запись онлайн — приедете к точному времени без очереди.</p>
-            </div>
-          </div>
+          <div><h3>Предварительная запись</h3><p>Удобная запись онлайн — приедете без очереди, к точному времени.</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== SERVICES ========== -->
+  <!-- SERVICES -->
   <section class="services section section--dark" id="services">
     <div class="container">
       <div class="section-header fade-up">
-        <span class="section-tag">Услуги и цены</span>
-        <h2 class="section-title">Всё для совершенного вида вашего автомобиля</h2>
-        <p class="section-desc">Профессиональный детейлинг от экспертов. Работаем с автомобилями любых марок и класса.</p>
+        <p class="eyebrow">Услуги и цены</p>
+        <h2 class="section-title">Всё для вашего автомобиля</h2>
       </div>
-
       <div class="services__grid">
 
         <div class="service-card fade-up">
-          <div class="service-card__icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 7h18M3 12h18M3 17h18"/><circle cx="19" cy="7" r="2" fill="currentColor" opacity=".3"/></svg>
-          </div>
           <div class="service-card__num">01</div>
           <h3 class="service-card__title">Детейлинг-мойка</h3>
-          <p class="service-card__desc">Профессиональная мойка с применением специализированной химии, очистка дисков, арок, порогов и стёкол. Контактная и бесконтактная технология.</p>
+          <p class="service-card__desc">Профессиональная мойка кузова, дисков, арок и стёкол. Контактная и бесконтактная технология.</p>
           <ul class="service-card__list">
             <li>Бесконтактная мойка кузова</li>
             <li>Чистка дисков и арок</li>
@@ -254,12 +136,9 @@
         </div>
 
         <div class="service-card fade-up">
-          <div class="service-card__icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/><path d="M16.24 7.76a6 6 0 010 8.49"/><path d="M7.76 7.76a6 6 0 000 8.49"/></svg>
-          </div>
           <div class="service-card__num">02</div>
           <h3 class="service-card__title">Полировка кузова</h3>
-          <p class="service-card__desc">Восстановление блеска и устранение царапин, голограмм, окислений. Одно- и двухступенчатая полировка профессиональным оборудованием.</p>
+          <p class="service-card__desc">Восстановление блеска, устранение царапин, голограмм и окислений. Одно- и двухступенчатая полировка.</p>
           <ul class="service-card__list">
             <li>Удаление царапин и потёртостей</li>
             <li>Устранение голограмм</li>
@@ -274,12 +153,9 @@
 
         <div class="service-card service-card--featured fade-up">
           <div class="service-card__badge">Популярно</div>
-          <div class="service-card__icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
-          </div>
           <div class="service-card__num">03</div>
           <h3 class="service-card__title">Керамическое покрытие</h3>
-          <p class="service-card__desc">Нанокерамика создаёт твёрдый защитный слой поверх лака. Защита от UV, химии, царапин и загрязнений на срок до 5 лет.</p>
+          <p class="service-card__desc">Нанокерамика создаёт твёрдый защитный слой поверх лака. Защита от UV, химии и царапин до 5 лет.</p>
           <ul class="service-card__list">
             <li>Защита на 2–5 лет</li>
             <li>Гидрофобный эффект</li>
@@ -293,17 +169,14 @@
         </div>
 
         <div class="service-card fade-up">
-          <div class="service-card__icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg>
-          </div>
           <div class="service-card__num">04</div>
           <h3 class="service-card__title">Защитные плёнки</h3>
-          <p class="service-card__desc">Антигравийные и PPF-плёнки для защиты наиболее уязвимых зон кузова от сколов, царапин и дорожного мусора. Самовосстанавливающееся покрытие.</p>
+          <p class="service-card__desc">PPF-плёнки для защиты уязвимых зон от сколов, царапин и дорожного мусора. Самовосстанавливающееся покрытие.</p>
           <ul class="service-card__list">
             <li>PPF полиуретановые плёнки</li>
             <li>Антигравийная защита</li>
             <li>Зонирование или полный кузов</li>
-            <li>Самовосстановление мелких царапин</li>
+            <li>Самовосстановление царапин</li>
           </ul>
           <div class="service-card__footer">
             <span class="service-card__price">от <strong>12 000 ₽</strong></span>
@@ -312,17 +185,14 @@
         </div>
 
         <div class="service-card fade-up">
-          <div class="service-card__icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
-          </div>
           <div class="service-card__num">05</div>
           <h3 class="service-card__title">Химчистка салона</h3>
-          <p class="service-card__desc">Глубокая очистка всех поверхностей салона: кресла, ковры, потолок, пластик, кожа. Удаление стойких пятен и неприятных запахов.</p>
+          <p class="service-card__desc">Глубокая очистка салона: сиденья, ковры, потолок, пластик, кожа. Удаление стойких пятен и запахов.</p>
           <ul class="service-card__list">
             <li>Чистка сидений и ковров</li>
-            <li>Обработка кожи/ткани/алькантары</li>
+            <li>Обработка кожи / алькантары</li>
             <li>Чистка потолка и стоек</li>
-            <li>Озонирование (дезодорация)</li>
+            <li>Озонирование</li>
           </ul>
           <div class="service-card__footer">
             <span class="service-card__price">от <strong>5 000 ₽</strong></span>
@@ -331,12 +201,9 @@
         </div>
 
         <div class="service-card fade-up">
-          <div class="service-card__icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
-          </div>
           <div class="service-card__num">06</div>
           <h3 class="service-card__title">Предпродажная подготовка</h3>
-          <p class="service-card__desc">Комплекс работ для максимально выгодной продажи автомобиля: устранение дефектов кузова, чистка салона, восстановление фар и финишная полировка.</p>
+          <p class="service-card__desc">Комплекс работ для максимально выгодной продажи: кузов, салон, фары и финишная полировка.</p>
           <ul class="service-card__list">
             <li>Полировка кузова</li>
             <li>Химчистка салона</li>
@@ -353,15 +220,52 @@
     </div>
   </section>
 
-  <!-- ========== BOOKING ========== -->
-  <section class="booking section" id="booking">
+  <!-- GALLERY -->
+  <section class="gallery section" id="gallery">
     <div class="container">
       <div class="section-header fade-up">
-        <span class="section-tag">Запись</span>
-        <h2 class="section-title">Оставьте заявку онлайн</h2>
-        <p class="section-desc">Заполните форму — мы свяжемся с вами в течение 15 минут для подтверждения записи.</p>
+        <p class="eyebrow">Наши работы</p>
+        <h2 class="section-title">Результаты говорят сами за себя</h2>
       </div>
+      <div class="gallery__grid fade-up">
+        <div class="gallery__item">
+          <div class="gallery__pair">
+            <div class="gallery__photo">
+              <img src="images/headlights-before.jpg" alt="Фары до полировки" loading="lazy">
+              <span class="gallery__label gallery__label--before">До</span>
+            </div>
+            <div class="gallery__photo">
+              <img src="images/headlights-after.jpg" alt="Фары после полировки" loading="lazy">
+              <span class="gallery__label gallery__label--after">После</span>
+            </div>
+          </div>
+          <p class="gallery__caption">Полировка и восстановление фар</p>
+        </div>
+        <div class="gallery__item">
+          <div class="gallery__pair">
+            <div class="gallery__photo">
+              <img src="images/welding-before.jpg" alt="Кузов до сварки" loading="lazy">
+              <span class="gallery__label gallery__label--before">До</span>
+            </div>
+            <div class="gallery__photo">
+              <img src="images/welding-after.jpg" alt="Кузов после сварки" loading="lazy">
+              <span class="gallery__label gallery__label--after">После</span>
+            </div>
+          </div>
+          <p class="gallery__caption">Сварочные работы кузова</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- BOOKING -->
+  <section class="booking section section--dark" id="booking">
+    <div class="container">
+      <div class="section-header fade-up">
+        <p class="eyebrow">Запись</p>
+        <h2 class="section-title">Оставьте заявку онлайн</h2>
+        <p class="section-desc">Заполните форму — свяжемся в течение 15 минут для подтверждения записи.</p>
+      </div>
       <div class="booking__wrap fade-up">
         <form class="booking-form" id="bookingForm" novalidate>
           <div class="form-row">
@@ -376,7 +280,6 @@
               <span class="form-error" id="phoneError"></span>
             </div>
           </div>
-
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" for="email">Email</label>
@@ -386,100 +289,59 @@
               <label class="form-label" for="carMake">Марка автомобиля <span class="req">*</span></label>
               <select class="form-input form-select" id="carMake" name="carMake" required>
                 <option value="">— Выберите марку —</option>
-                <option>BMW</option>
-                <option>Mercedes-Benz</option>
-                <option>Audi</option>
-                <option>Toyota</option>
-                <option>Lexus</option>
-                <option>Volkswagen</option>
-                <option>Porsche</option>
-                <option>Kia</option>
-                <option>Hyundai</option>
-                <option>Lada (ВАЗ)</option>
-                <option>Nissan</option>
-                <option>Mazda</option>
-                <option>Skoda</option>
-                <option>Volvo</option>
-                <option>Land Rover</option>
-                <option>Другая марка</option>
+                <option>BMW</option><option>Mercedes-Benz</option><option>Audi</option><option>Toyota</option><option>Lexus</option><option>Volkswagen</option><option>Porsche</option><option>Kia</option><option>Hyundai</option><option>Lada (ВАЗ)</option><option>Nissan</option><option>Mazda</option><option>Skoda</option><option>Volvo</option><option>Land Rover</option><option>Другая марка</option>
               </select>
               <span class="form-error" id="carMakeError"></span>
             </div>
           </div>
-
           <div class="form-row">
             <div class="form-group">
-              <label class="form-label" for="carModel">Модель автомобиля</label>
-              <input class="form-input" type="text" id="carModel" name="carModel" placeholder="Например: X5, Camry, A6..." />
+              <label class="form-label" for="carModel">Модель</label>
+              <input class="form-input" type="text" id="carModel" name="carModel" placeholder="X5, Camry, A6..." />
             </div>
             <div class="form-group">
               <label class="form-label" for="service">Услуга <span class="req">*</span></label>
               <select class="form-input form-select" id="service" name="service" required>
                 <option value="">— Выберите услугу —</option>
-                <option>Детейлинг-мойка</option>
-                <option>Полировка кузова</option>
-                <option>Керамическое покрытие</option>
-                <option>Защитные плёнки (PPF)</option>
-                <option>Химчистка салона</option>
-                <option>Предпродажная подготовка</option>
-                <option>Комплекс услуг (подбор индивидуально)</option>
+                <option>Детейлинг-мойка</option><option>Полировка кузова</option><option>Керамическое покрытие</option><option>Защитные плёнки (PPF)</option><option>Химчистка салона</option><option>Предпродажная подготовка</option><option>Комплекс услуг</option>
               </select>
               <span class="form-error" id="serviceError"></span>
             </div>
           </div>
-
           <div class="form-group">
             <label class="form-label" for="comment">Комментарий</label>
-            <textarea class="form-input form-textarea" id="comment" name="comment" placeholder="Расскажите о состоянии автомобиля, пожеланиях или удобном времени..."></textarea>
+            <textarea class="form-input form-textarea" id="comment" name="comment" placeholder="Состояние автомобиля, пожелания или удобное время..."></textarea>
           </div>
-
           <div class="form-group form-group--privacy">
             <label class="checkbox-label">
               <input type="checkbox" id="privacy" name="privacy" required />
               <span class="checkbox-custom"></span>
-              <span class="checkbox-text">Я согласен с <a href="#" class="link">политикой конфиденциальности</a> и обработкой персональных данных</span>
+              <span class="checkbox-text">Согласен с <a href="#" class="link">политикой конфиденциальности</a> и обработкой персональных данных</span>
             </label>
             <span class="form-error" id="privacyError"></span>
           </div>
-
           <button type="submit" class="btn btn--primary btn--full btn--lg" id="submitBtn">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
             Отправить заявку
           </button>
         </form>
-
         <div class="booking-success" id="bookingSuccess">
           <div class="booking-success__icon">
-            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
           </div>
           <h3>Спасибо! Заявка отправлена.</h3>
-          <p>Мы свяжемся с вами в ближайшее время.<br/>Обычно это занимает не более 15 минут.</p>
-          <a href="#services" class="btn btn--outline btn--lg">Посмотреть другие услуги</a>
-        </div>
-
-        <div class="booking-info">
-          <div class="booking-info__item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            <span>Работаем ежедневно <strong>09:00–20:00</strong></span>
-          </div>
-          <div class="booking-info__item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.0 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
-            <span>Быстрый ответ — <strong>+7 (917) 143-23-28</strong></span>
-          </div>
-          <div class="booking-info__item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/></svg>
-            <span>Или напишите в <a href="https://t.me/Qujen_Yar" target="_blank" rel="noopener" class="link"><strong>Telegram</strong></a></span>
-          </div>
+          <p>Свяжемся с вами в течение 15 минут.</p>
+          <a href="#services" class="btn btn--outline btn--lg">Посмотреть услуги</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== ADDRESS ========== -->
-  <section class="address section section--dark" id="address">
+  <!-- ADDRESS -->
+  <section class="address section" id="address">
     <div class="container">
       <div class="section-header fade-up">
-        <span class="section-tag">Адрес</span>
+        <p class="eyebrow">Адрес</p>
         <h2 class="section-title">Как нас найти</h2>
       </div>
       <div class="address__grid fade-up">
@@ -489,7 +351,7 @@
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
             </div>
             <div>
-              <h3 class="address__item-title">Адрес</h3>
+              <p class="address__item-title">Адрес</p>
               <p class="address__item-text">г. Самара, ул. Промышленности, 64В</p>
             </div>
           </div>
@@ -498,115 +360,83 @@
               <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
             </div>
             <div>
-              <h3 class="address__item-title">Режим работы</h3>
+              <p class="address__item-title">Режим работы</p>
               <p class="address__item-text">Ежедневно, 09:00 — 20:00</p>
               <p class="address__item-sub">Без выходных и праздников</p>
             </div>
           </div>
-          <div class="address__item">
-            <div class="address__item-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.0 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
-            </div>
-            <div>
-              <h3 class="address__item-title">Телефоны</h3>
-              <a href="tel:+79171432328" class="address__link">+7 (917) 143-23-28</a><br/>
-              <a href="tel:+79272421096" class="address__link">+7 (927) 242-10-96</a>
-            </div>
-          </div>
-          <div class="address__item">
-            <div class="address__item-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
-            </div>
-            <div>
-              <h3 class="address__item-title">Как добраться</h3>
-              <p class="address__item-text">Промышленный район Самары. Рядом с трассой М5. Удобная парковка.</p>
-            </div>
-          </div>
-          <a href="#booking" class="btn btn--primary btn--lg address__cta">
-            Записаться сейчас
-          </a>
+          <a href="#booking" class="btn btn--primary btn--lg address__cta">Записаться сейчас</a>
         </div>
         <div class="address__map">
           <iframe
-            title="Карта проезда — Двойной Я-эффект, Самара"
-            src="https://yandex.ru/map-widget/v1/?ll=50.2228%2C53.2186&z=16&pt=50.2228%2C53.2186%2Cpm2rdm~&text=%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0%2C%20%D1%83%D0%BB.%20%D0%9F%D1%80%D0%BE%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8%2C%2064%D0%92"
-            width="100%"
-            height="100%"
-            frameborder="0"
-            allowfullscreen
-            loading="lazy"
+            title="Двойной Я-эффект на карте"
+            src="https://yandex.ru/map-widget/v1/?text=%D0%A1%D0%B0%D0%BC%D0%B0%D1%80%D0%B0%2C+%D1%83%D0%BB%D0%B8%D1%86%D0%B0+%D0%9F%D1%80%D0%BE%D0%BC%D1%8B%D1%88%D0%BB%D0%B5%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D0%B8%2C+64%D0%92&z=16&l=map"
+            width="100%" height="100%"
+            frameborder="0" allowfullscreen loading="lazy"
           ></iframe>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== CONTACTS ========== -->
-  <section class="contacts section" id="contacts">
+  <!-- CONTACTS -->
+  <section class="contacts section section--dark" id="contacts">
     <div class="container">
       <div class="section-header fade-up">
-        <span class="section-tag">Контакты</span>
-        <h2 class="section-title">Свяжитесь с нами любым удобным способом</h2>
+        <p class="eyebrow">Контакты</p>
+        <h2 class="section-title">Свяжитесь с нами</h2>
       </div>
       <div class="contacts__grid fade-up">
-
         <a href="tel:+79171432328" class="contact-card">
           <div class="contact-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.0 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.0 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
           </div>
-          <h3 class="contact-card__title">Телефон 1</h3>
+          <p class="contact-card__title">Телефон 1</p>
           <p class="contact-card__value">+7 (917) 143-23-28</p>
           <span class="contact-card__action">Позвонить</span>
         </a>
-
         <a href="tel:+79272421096" class="contact-card">
           <div class="contact-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.0 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.0 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
           </div>
-          <h3 class="contact-card__title">Телефон 2</h3>
+          <p class="contact-card__title">Телефон 2</p>
           <p class="contact-card__value">+7 (927) 242-10-96</p>
           <span class="contact-card__action">Позвонить</span>
         </a>
-
         <a href="https://t.me/Qujen_Yar" target="_blank" rel="noopener" class="contact-card contact-card--tg">
           <div class="contact-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/></svg>
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/></svg>
           </div>
-          <h3 class="contact-card__title">Telegram</h3>
+          <p class="contact-card__title">Telegram</p>
           <p class="contact-card__value">@Qujen_Yar</p>
           <span class="contact-card__action">Написать</span>
         </a>
-
         <div class="contact-card">
           <div class="contact-card__icon">
-            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
           </div>
-          <h3 class="contact-card__title">Email</h3>
-          <p class="contact-card__value">info@dvoynoy-effect.ru</p>
-          <span class="contact-card__action">Написать</span>
+          <p class="contact-card__title">Адрес</p>
+          <p class="contact-card__value">ул. Промышленности, 64В</p>
+          <span class="contact-card__action">г. Самара</span>
         </div>
-
       </div>
-
-      <!-- Кнопки быстрой связи -->
       <div class="quick-contacts fade-up">
         <a href="tel:+79171432328" class="btn btn--primary btn--lg">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.0 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.0 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
           +7 (917) 143-23-28
         </a>
         <a href="tel:+79272421096" class="btn btn--outline btn--lg">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.0 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.0 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
           +7 (927) 242-10-96
         </a>
         <a href="https://t.me/Qujen_Yar" target="_blank" rel="noopener" class="btn btn--tg btn--lg">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/></svg>
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/></svg>
           Telegram
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ========== FOOTER ========== -->
   <footer class="footer">
     <div class="container footer__inner">
       <div class="footer__brand">
@@ -614,7 +444,7 @@
           <span class="logo__icon">◈</span>
           <span class="logo__text">Двойной <span class="accent">Я-эффект</span></span>
         </a>
-        <p class="footer__brand-desc">Профессиональный детейлинг и защита автомобиля в Самаре. Возвращаем блеск, сохраняем ценность.</p>
+        <p class="footer__brand-desc">Детейлинг и защита автомобиля в Самаре.<br>ул. Промышленности, 64В.</p>
       </div>
       <div class="footer__links">
         <h4 class="footer__heading">Услуги</h4>
@@ -624,39 +454,23 @@
         <a href="#services" class="footer__link">Защитные плёнки</a>
         <a href="#services" class="footer__link">Химчистка салона</a>
       </div>
-      <div class="footer__contact">
-        <h4 class="footer__heading">Контакты</h4>
-        <p class="footer__contact-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          г. Самара, ул. Промышленности, 64В
-        </p>
-        <a href="tel:+79171432328" class="footer__contact-item footer__link">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.0 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
-          +7 (917) 143-23-28
-        </a>
-        <a href="tel:+79272421096" class="footer__contact-item footer__link">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.0 2.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
-          +7 (927) 242-10-96
-        </a>
-        <a href="https://t.me/Qujen_Yar" target="_blank" rel="noopener" class="footer__contact-item footer__link">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/></svg>
-          Telegram
-        </a>
-        <p class="footer__contact-item">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-          09:00 — 20:00, ежедневно
-        </p>
+      <div class="footer__nav">
+        <h4 class="footer__heading">Навигация</h4>
+        <a href="#about"    class="footer__link">О компании</a>
+        <a href="#gallery"  class="footer__link">Наши работы</a>
+        <a href="#booking"  class="footer__link">Запись</a>
+        <a href="#address"  class="footer__link">Адрес</a>
+        <a href="#contacts" class="footer__link">Контакты</a>
       </div>
     </div>
     <div class="footer__bottom">
       <div class="container footer__bottom-inner">
-        <span>© 2024 Двойной Я-эффект. Все права защищены.</span>
-        <span>г. Самара, ул. Промышленности, 64В</span>
+        <span>© 2024 Двойной Я-эффект</span>
+        <span>г. Самара, ул. Промышленности, 64В · 09:00–20:00</span>
       </div>
     </div>
   </footer>
 
-  <!-- Плавающая кнопка Telegram -->
   <a href="https://t.me/Qujen_Yar" target="_blank" rel="noopener" class="float-tg" aria-label="Написать в Telegram">
     <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.12l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.833.941z"/></svg>
   </a>
