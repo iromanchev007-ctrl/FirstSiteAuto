@@ -84,8 +84,8 @@ if (phoneInput) {
      Copy your chat_id from the response.
   3. Replace the placeholders below.
 */
-const TG_BOT_TOKEN = 'YOUR_BOT_TOKEN_HERE';   // ← вставьте токен бота
-const TG_CHAT_ID   = 'YOUR_CHAT_ID_HERE';     // ← вставьте chat_id
+const TG_BOT_TOKEN = '8698821256:AAEI24UBNdAmzv5k0dKu6vV5EfB456C0rHw';   // ← вставьте токен бота
+const TG_CHAT_ID   = '7676497885';     // ← вставьте chat_id
 
 const form         = document.getElementById('bookingForm');
 const successBlock = document.getElementById('bookingSuccess');
