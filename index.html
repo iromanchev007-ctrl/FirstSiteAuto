@@ -275,7 +275,21 @@
               <label class="form-label" for="carMake">Марка автомобиля <span class="req">*</span></label>
               <select class="form-input form-select" id="carMake" name="carMake" required>
                 <option value="">— Выберите марку —</option>
-                <option>BMW</option><option>Mercedes-Benz</option><option>Audi</option><option>Toyota</option><option>Lexus</option><option>Volkswagen</option><option>Porsche</option><option>Kia</option><option>Hyundai</option><option>Lada (ВАЗ)</option><option>Nissan</option><option>Mazda</option><option>Skoda</option><option>Volvo</option><option>Land Rover</option><option>Другая марка</option>
+                <optgroup label="Российские">
+                  <option>Lada (ВАЗ)</option>
+                </optgroup>
+                <optgroup label="Европейские">
+                  <option>BMW</option><option>Mercedes-Benz</option><option>Audi</option><option>Volkswagen</option><option>Porsche</option><option>Skoda</option><option>Volvo</option><option>Land Rover</option>
+                </optgroup>
+                <optgroup label="Японские / Корейские">
+                  <option>Toyota</option><option>Lexus</option><option>Nissan</option><option>Mazda</option><option>Honda</option><option>Kia</option><option>Hyundai</option>
+                </optgroup>
+                <optgroup label="Китайские">
+                  <option>Chery</option><option>Haval</option><option>Geely</option><option>BYD</option><option>Changan</option><option>Omoda</option><option>Exeed</option><option>Jetour</option><option>Jaecoo</option><option>Tank</option>
+                </optgroup>
+                <optgroup label="Другое">
+                  <option>Другая марка</option>
+                </optgroup>
               </select>
               <span class="form-error" id="carMakeError"></span>
             </div>
@@ -283,7 +297,9 @@
           <div class="form-row">
             <div class="form-group">
               <label class="form-label" for="carModel">Модель</label>
-              <input class="form-input" type="text" id="carModel" name="carModel" placeholder="X5, Camry, A6..." />
+              <select class="form-input form-select" id="carModel" name="carModel">
+                <option value="">— Сначала выберите марку —</option>
+              </select>
             </div>
             <div class="form-group">
               <label class="form-label" for="service">Услуга <span class="req">*</span></label>

@@ -57,6 +57,66 @@ document.querySelectorAll('.services__grid, .about__features, .contacts__grid').
 
 fadeEls.forEach(el => observer.observe(el));
 
+// ── Car make → model dynamic dropdown ─────────────────────
+const CAR_MODELS = {
+  'Lada (ВАЗ)':    ['Granta', 'Vesta', 'XRAY', 'Largus', 'Niva Travel', 'Niva Legend', '2114', '2115', '2107', '2106', '2105', '2104', 'Другая'],
+  'BMW':           ['1 серия', '2 серия', '3 серия', '5 серия', '7 серия', 'X1', 'X2', 'X3', 'X5', 'X6', 'X7', 'M3', 'M5', 'Другая'],
+  'Mercedes-Benz': ['A-Class', 'B-Class', 'C-Class', 'E-Class', 'S-Class', 'GLA', 'GLC', 'GLE', 'GLS', 'CLA', 'AMG GT', 'Другая'],
+  'Audi':          ['A1', 'A3', 'A4', 'A5', 'A6', 'A7', 'A8', 'Q3', 'Q5', 'Q7', 'Q8', 'TT', 'RS3', 'RS6', 'Другая'],
+  'Volkswagen':    ['Polo', 'Golf', 'Passat', 'Tiguan', 'Touareg', 'Jetta', 'Arteon', 'T-Cross', 'T-Roc', 'ID.4', 'Другая'],
+  'Porsche':       ['911', 'Cayenne', 'Macan', 'Panamera', 'Taycan', 'Boxster', 'Другая'],
+  'Skoda':         ['Octavia', 'Superb', 'Karoq', 'Kodiaq', 'Fabia', 'Rapid', 'Другая'],
+  'Volvo':         ['S60', 'S90', 'V60', 'V90', 'XC40', 'XC60', 'XC90', 'Другая'],
+  'Land Rover':    ['Discovery', 'Discovery Sport', 'Defender', 'Range Rover', 'Range Rover Sport', 'Range Rover Evoque', 'Другая'],
+  'Toyota':        ['Camry', 'Corolla', 'RAV4', 'Land Cruiser', 'Land Cruiser Prado', 'Highlander', 'Yaris', 'C-HR', 'Другая'],
+  'Lexus':         ['ES', 'IS', 'LS', 'GS', 'NX', 'RX', 'GX', 'LX', 'UX', 'Другая'],
+  'Nissan':        ['Qashqai', 'X-Trail', 'Murano', 'Pathfinder', 'Juke', 'Almera', 'Teana', 'Другая'],
+  'Mazda':         ['Mazda 3', 'Mazda 6', 'CX-3', 'CX-5', 'CX-7', 'CX-9', 'MX-5', 'Другая'],
+  'Honda':         ['Civic', 'Accord', 'CR-V', 'HR-V', 'Pilot', 'Jazz', 'Другая'],
+  'Kia':           ['Rio', 'Ceed', 'K5 (Optima)', 'Sportage', 'Sorento', 'Stinger', 'Seltos', 'Soul', 'Другая'],
+  'Hyundai':       ['Solaris', 'Elantra', 'i30', 'Tucson', 'Santa Fe', 'Creta', 'Palisade', 'Другая'],
+  'Chery':         ['Tiggo 4', 'Tiggo 4 Pro', 'Tiggo 7 Pro', 'Tiggo 7 Pro Max', 'Tiggo 8 Pro', 'Tiggo 8 Pro Max', 'Arrizo 8', 'Другая'],
+  'Haval':         ['F7', 'F7x', 'Jolion', 'H6', 'Dargo', 'Другая'],
+  'Geely':         ['Atlas', 'Atlas Pro', 'Coolray', 'Emgrand', 'Monjaro', 'Другая'],
+  'BYD':           ['Atto 3', 'Han', 'Tang', 'Song Plus', 'Seal', 'Другая'],
+  'Changan':       ['CS35 Plus', 'CS55 Plus', 'CS75 Plus', 'UNI-T', 'UNI-K', 'Другая'],
+  'Omoda':         ['C5', 'S5', 'Другая'],
+  'Exeed':         ['LX', 'TX', 'TXL', 'VX', 'Другая'],
+  'Jetour':        ['Dashing', 'X70', 'X70 Plus', 'X90 Plus', 'Другая'],
+  'Jaecoo':        ['J7', 'J8', 'Другая'],
+  'Tank':          ['300', '400', '500', 'Другая'],
+};
+
+const carMakeSelect  = document.getElementById('carMake');
+const carModelSelect = document.getElementById('carModel');
+
+if (carMakeSelect && carModelSelect) {
+  carMakeSelect.addEventListener('change', () => {
+    const make   = carMakeSelect.value;
+    const models = CAR_MODELS[make];
+    carModelSelect.innerHTML = '';
+
+    if (!models) {
+      carModelSelect.innerHTML = '<option value="">— Введите вручную —</option>';
+      carModelSelect.disabled = true;
+      return;
+    }
+
+    carModelSelect.disabled = false;
+    const placeholder = document.createElement('option');
+    placeholder.value = '';
+    placeholder.textContent = '— Выберите модель —';
+    carModelSelect.appendChild(placeholder);
+
+    models.forEach(m => {
+      const opt = document.createElement('option');
+      opt.value = m;
+      opt.textContent = m;
+      carModelSelect.appendChild(opt);
+    });
+  });
+}
+
 // ── Phone mask ─────────────────────────────────────────────
 const phoneInput = document.getElementById('phone');
 if (phoneInput) {
